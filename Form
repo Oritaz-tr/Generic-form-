@@ -1,0 +1,38 @@
+form:
+  title: "Generic Form"
+  description: "Please provide your parameters below:"
+  questions:
+    - type: "text"
+      title: "@ObjectType"
+      description: "Please choose table or SP"
+      options:
+        - "Table"
+        - "SP" 
+     required: true  
+
+    - type: "text"
+      title: "@DatalakeFileType"
+      description: "Please choose file type"
+      options:
+        - "Parquet"
+        - "Delta" 
+        - "Csv" 
+      required: true
+
+    - type: "text"
+      title: "@PathPrefix"
+      description: "Please choose service"
+      options:
+        - "Gold"
+        - "Bronze"
+      required: true
+
+    - type: "text"
+      title: "@DBType"
+      description: "Please choose DBType"
+      options:
+        - "SQLServer"
+        - "AzureSQL"
+        - "SynapseParquet"
+        - "CosmosSQLParquet"
+      required: true
